@@ -7,9 +7,9 @@ gastos = ARGV[4].to_i
 utilidades = (precio*(usuarios + 2*usuarios_premium) - gastos)
 
 if utilidades > 0
-    impuesto = (utilidades*0.35).round(0)
-    utilidades = (utilidades*0.65).round(0)
-    puts "Las utilidades son #{utilidades} y el impuesto a pagar es #{impuesto}"
+  impuesto = (utilidades*0.35).round(0)
+  utilidades = (utilidades*0.65).round(0)
+  puts "Las utilidades son #{utilidades} y el impuesto a pagar es #{impuesto}"
 else
-    puts "Su utilidad es #{utilidades}, se encuentra excento de impuesto"
+  puts "Su utilidad es #{utilidades}, se encuentra excento de impuesto"
 end
